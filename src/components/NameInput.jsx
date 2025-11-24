@@ -17,7 +17,7 @@ const NameInput = () => {
         const width = pdf.internal.pageSize.getWidth();
         const height = (canvas.height * width) / canvas.width;
 
-        pdf.addImage(imgData, "PNG", 0, 10, width, height);
+        pdf.addImage(imgData, "PNG", 0, 0, width, height);
 
         const pdfBlob = pdf.output("blob");
         const file = new File([pdfBlob], "Shraddh-Card.pdf", {
