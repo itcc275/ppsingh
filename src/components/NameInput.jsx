@@ -17,10 +17,9 @@ const NameInput = () => {
         const width = pdf.internal.pageSize.getWidth();
         const height = (canvas.height * width) / canvas.width;
 
-        pdf.addImage(imgData, "PNG", 0, 10, width + 50, height + 50);
+        pdf.addImage(imgData, "PNG", 0, 10, width, height);
 
         const pdfBlob = pdf.output("blob");
-
         const file = new File([pdfBlob], "Shraddh-Card.pdf", {
             type: "application/pdf",
         });
@@ -45,70 +44,70 @@ const NameInput = () => {
     return (
         <div
             style={{
-                padding: "30px",
-                maxWidth: "800px",
+                padding: "20px",
+                maxWidth: "480px",
                 margin: "0 auto",
                 textAlign: "center",
             }}
         >
             <label
                 style={{
-                    // fontSize: "20px",
-                    // fontWeight: "600",
-                    // marginBottom: "10px",
-                    // display: "block",
+                    fontSize: "18px",
+                    fontWeight: "600",
+                    marginBottom: "10px",
+                    display: "block",
+                    color: "#333",
                 }}
             >
-                Enter Recipient Name
+                प्राप्तकर्ता का नाम दर्ज करें
             </label>
 
+            {/* MOBILE-FIRST INPUT */}
             <input
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                placeholder="e.g. श्रीमान् राम प्रसाद"
+                placeholder="उदा: श्रीमान् राम प्रसाद"
                 style={{
-                    width: "80%",
-                    padding: "12px 15px",
-                    fontSize: "18px",
-                    borderRadius: "12px",
-                    border: "1.5px solid #999",
+                    width: "100%",
+                    padding: "14px 16px",
+                    fontSize: "17px",
+                    borderRadius: "14px",
+                    border: "1.5px solid #ccc",
                     outline: "none",
-                    marginBottom: "20px",
+                    marginBottom: "18px",
                     transition: "0.2s",
-                    boxShadow: "0 0 5px rgba(0,0,0,0.12)",
+                    boxShadow: "0 2px 6px rgba(0,0,0,0.08)",
                 }}
                 onFocus={(e) => (e.target.style.border = "1.5px solid #4A4A4A")}
-                onBlur={(e) => (e.target.style.border = "1.5px solid #999")}
+                onBlur={(e) => (e.target.style.border = "1.5px solid #ccc")}
             />
 
-            <br />
-
+            {/* MOBILE-FIRST BUTTON */}
             <button
                 onClick={sharePDF}
                 style={{
-                    marginTop: "10px",
-                    marginBottom: "25px",
-                    padding: "12px 25px",
+                    width: "100%",
+                    padding: "14px 0",
                     backgroundColor: "#25D366",
                     color: "white",
                     border: "none",
-                    borderRadius: "12px",
+                    borderRadius: "14px",
                     cursor: "pointer",
                     fontSize: "18px",
                     fontWeight: "600",
                     letterSpacing: "0.5px",
-                    boxShadow: "0 4px 10px rgba(0,0,0,0.15)",
+                    boxShadow: "0 4px 12px rgba(0,0,0,0.18)",
                     transition: "0.2s",
+                    marginBottom: "25px",
                 }}
                 onMouseDown={(e) => (e.target.style.transform = "scale(0.97)")}
                 onMouseUp={(e) => (e.target.style.transform = "scale(1)")}
                 onMouseLeave={(e) => (e.target.style.transform = "scale(1)")}
             >
-                📤 Share on WhatsApp
+                📤 व्हाट्सऐप पर साझा करें
             </button>
 
-            {/* Pass name as prop to ShraddhCard */}
             <ShraddhCard recipientName={name} cardRef={cardRef} />
         </div>
     );

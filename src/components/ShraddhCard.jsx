@@ -29,9 +29,9 @@ const ShraddhCard = ({ recipientName, cardRef }) => {
                     fontSize: "18px"
                 }}
             >
-                <h2 style={{ textAlign: "center", marginBottom: "5px" }}>॥ शोक संदेश ॥</h2>
+                <h2 style={{ textAlign: "center", margin: 0 }}>॥ शोक संदेश ॥</h2>
 
-                <p style={{ textAlign: "center", marginBottom: "20px", fontSize: "16px" }}>
+                <p style={{ textAlign: "center", margin: 0 }}>
                     नैन् छिनदन्ति शस्त्राणि, नैन् दहति पावकः। न चैनं क्लैदन्त्यापो न शोषयति मारुतः॥
                 </p>
 
@@ -118,22 +118,22 @@ const ShraddhCard = ({ recipientName, cardRef }) => {
 
                     {/* Shokakul */}
                     <div style={{ width: "48%", textAlign: "left" }}>
-                        <p><strong>शोकाकुल :</strong></p>
-                        <p><strong>महेश प्रसाद</strong> (भ्राता)</p>
-                        <p><strong>सुरेश प्रसाद</strong> (भतीजा)</p>
-                        <p>पुत्र एवं समस्त नाँगी परिवार</p>
+                        <strong>शोकाकुल :</strong><br />
+                        <strong>महेश प्रसाद</strong> (भ्राता)<br />
+                        <strong>सुरेश प्रसाद</strong> (भतीजा)<br />
+                        पुत्र एवं समस्त दंगी परिवार
                     </div>
 
                     {/* Vinit */}
                     <div style={{ width: "48%", textAlign: "right" }}>
-                        <p><strong>विनीत</strong></p>
-                        <p><strong>श्याम किशोर प्रसाद</strong></p>
-                        <p><strong>अरूण कुमार</strong></p>
-                        <p><strong>नागेन्द्र प्रसाद</strong></p>
-                        <p>दाँगी भवन, इमामगंज
-                            गया, बिहार</p>
-                        <p>मो.: 9931071552
-                            9771898989</p>
+                        <strong>विनीत</strong><br />
+                        <strong>श्याम किशोर प्रसाद</strong><br />
+                        <strong>अरूण कुमार</strong><br />
+                        <strong>नागेन्द्र प्रसाद</strong><br />
+                        दाँगी भवन, इमामगंज
+                        गया, बिहार<br />
+                        मो.: 9931071552
+                        9771898989<br />
                     </div>
                 </div>
             </div>
