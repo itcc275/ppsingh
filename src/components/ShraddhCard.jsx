@@ -1,14 +1,10 @@
 const ShraddhCard = ({ recipientName, cardRef }) => {
-
-
     const program = [
         { date: '01/12/2025', day: 'सोमवार', event: 'दशकर्म' },
         { date: '02/12/2025', day: 'मंगलवार', event: 'एकादशा' },
         { date: '03/12/2025', day: 'बुधवार', event: 'शोकसभा सह ब्रह्मभोज' },
         { date: '04/12/2025', day: 'गुरुवार', event: 'बरखी' },
     ];
-
-
 
     return (
         <div style={{ padding: "20px" }}>
@@ -93,7 +89,7 @@ const ShraddhCard = ({ recipientName, cardRef }) => {
                 <h3 style={{ textAlign: "center", margin: 0 }}>श्राद्ध कार्यक्रम</h3>
 
                 {/* Program Table */}
-                <table style={{ width: "100%", borderCollapse: "collapse", marginTop: "10px" }}>
+                <table style={{ width: "100%", borderCollapse: "collapse", marginTop: 0 }}>
                     <thead>
                         <tr>
                             <th style={headerCell}>दिनांक</th>
