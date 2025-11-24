@@ -53,10 +53,10 @@ const NameInput = () => {
         >
             <label
                 style={{
-                    fontSize: "20px",
-                    fontWeight: "600",
-                    marginBottom: "10px",
-                    display: "block",
+                    // fontSize: "20px",
+                    // fontWeight: "600",
+                    // marginBottom: "10px",
+                    // display: "block",
                 }}
             >
                 Enter Recipient Name

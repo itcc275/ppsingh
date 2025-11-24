@@ -76,7 +76,7 @@ const ShraddhCard = ({ recipientName, cardRef }) => {
                 </p>
 
                 {/* Program Heading */}
-                <h3 style={{ textAlign: "center", marginTop: "20px" }}>श्राद्ध कार्यक्रम</h3>
+                <h3 style={{ textAlign: "center", marginTop: "10px" }}>श्राद्ध कार्यक्रम</h3>
 
                 {/* Program Table */}
                 <table style={{ width: "100%", borderCollapse: "collapse", marginTop: "10px" }}>
@@ -113,7 +113,7 @@ const ShraddhCard = ({ recipientName, cardRef }) => {
                 <div style={{
                     display: "flex",
                     justifyContent: "space-between",
-                    marginTop: "25px"
+                    marginTop: "5px"
                 }}>
 
                     {/* Shokakul */}
