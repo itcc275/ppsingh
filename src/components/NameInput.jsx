@@ -10,7 +10,7 @@ const NameInput = () => {
     const sharePDF = async () => {
         const card = cardRef.current;
 
-        const canvas = await html2canvas(card, { scale: 3 });
+        const canvas = await html2canvas(card, { scale: 1 });
         const imgData = canvas.toDataURL("image/png");
 
         const pdf = new jsPDF("p", "mm", "a4");
