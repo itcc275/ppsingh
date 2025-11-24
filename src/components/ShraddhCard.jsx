@@ -38,7 +38,7 @@ const ShraddhCard = ({ recipientName, cardRef }) => {
                             width: "150px",
                             height: "150px",
                             borderRadius: "50%",       // 🔥 makes it circular
-                            objectFit: "cover",
+                            objectFit: "contain",
                             boxShadow: "0 4px 12px rgba(0,0,0,0.25)", // soft shadow
                         }}
                     />
@@ -81,7 +81,7 @@ const ShraddhCard = ({ recipientName, cardRef }) => {
                 </div>
 
 
-                <p style={{ textAlign: "left", marginBottom: "20px" }}>
+                <p style={{ textAlign: "left", marginBottom: 0 }}>
                     <strong>मान्यवर,</strong><br />
                     अत्यन्त दुःख के साथ सूचित कर रहा हूँ कि मेरे पूज्य <strong>पिता जी श्री परमेश्वर प्रसाद सिंह</strong> का स्वर्गवास
                     दिनांक <strong>22/11/2025 (शनिवार)</strong> को हो गया है।<br />
@@ -90,7 +90,7 @@ const ShraddhCard = ({ recipientName, cardRef }) => {
                 </p>
 
                 {/* Program Heading */}
-                <h3 style={{ textAlign: "center", marginTop: "10px" }}>श्राद्ध कार्यक्रम</h3>
+                <h3 style={{ textAlign: "center", margin: 0 }}>श्राद्ध कार्यक्रम</h3>
 
                 {/* Program Table */}
                 <table style={{ width: "100%", borderCollapse: "collapse", marginTop: "10px" }}>
