@@ -14,14 +14,10 @@ const NameInput = () => {
         const imgData = canvas.toDataURL("image/png");
 
         const pdf = new jsPDF("p", "mm", "a4");
-        // const width = pdf.internal.pageSize.getWidth();
-        // const height = (canvas.height * width) / canvas.width;
-        const width = 250;
-        const height = 350
-        console.log(width);
-        console.log(height);
+        const width = pdf.internal.pageSize.getWidth();
+        const height = (canvas.height * width) / canvas.width;
 
-        pdf.addImage(imgData, "PNG", 0, 10, width, height);
+        pdf.addImage(imgData, "PNG", 0, 10, width + 50, height + 50);
 
         const pdfBlob = pdf.output("blob");
 
