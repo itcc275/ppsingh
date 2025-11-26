@@ -129,7 +129,7 @@ const ShraddhCard = ({ recipientName, cardRef }) => {
                     {/* Shokakul */}
                     <div style={{ width: "48%", textAlign: "left" }}>
                         <strong>शोकाकुल :</strong><br />
-                        <strong>महेश प्रसाद</strong> (भ्राता)<br />
+                        <strong>महेश प्रसाद</strong> (अनुज)<br />
                         <strong>सुरेश प्रसाद</strong> (भतीजा)<br />
                         पुत्र एवं समस्त दाँगी परिवार
                     </div>
