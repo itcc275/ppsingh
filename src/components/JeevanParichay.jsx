@@ -100,6 +100,25 @@ export default function JeevanParichay() {
                         </div>
                     ))
                 }
+                {/* ==== QR Code Share Section ==== */}
+                <div className="text-center mt-10 mb-8">
+                    <h2 className="text-xl font-bold text-gray-900 mb-3">
+                        व्हाट्सऐप और फ़ेसबुक पर साझा करने के लिए QR कोड स्कैन करें
+                    </h2>
+
+                    <div className="flex justify-center">
+                        <img
+                            src="ppsingh_qrcode.png"
+                            alt="QR Code for Sharing"
+                            className="w-40 h-40 sm:w-48 sm:h-48 shadow-lg rounded-lg border border-gray-300"
+                        />
+                    </div>
+
+                    <p className="text-gray-700 text-sm mt-3">
+                        (मोबाइल कैमरा से स्कैन करें और सीधे श्रद्धांजलि पेज खोलें)
+                    </p>
+                </div>
+
             </div>
         </div>
     );
