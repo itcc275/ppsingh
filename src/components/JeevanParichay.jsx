@@ -1,11 +1,64 @@
 export default function JeevanParichay() {
     return (
-        <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-2xl leading-relaxed text-gray-800">
-            <div className="text-center mb-8">
-                <h1 className="text-3xl font-bold mb-2">स्वर्गीय श्री परमेश्वर प्रसाद सिंह</h1>
-                <p className="text-lg font-semibold">(जन्म तिथि - 02 जनवरी 1944 पुण्य तिथि - 22 नवम्बर 2025)</p>
+        <div className="max-w-4xl mx-auto p-4 sm:p-6 bg-white shadow-lg rounded-2xl leading-relaxed text-gray-800">
+
+            {/* === Profile Picture Section === */}
+            <div className="text-center mb-6">
+                <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto rounded-full overflow-hidden shadow-md">
+                    <img
+                        src="father.png"
+                        alt="स्वर्गीय श्री परमेश्वर प्रसाद सिंह"
+                        className="w-full h-full object-cover"
+                    />
+                </div>
+
+                <h1 className="text-2xl sm:text-3xl font-bold mt-4">
+                    स्वर्गीय श्री परमेश्वर प्रसाद सिंह
+                </h1>
+
+                <p className="text-base sm:text-lg font-semibold mt-1">
+                    (जन्म तिथि - 02 जनवरी 1944  •  पुण्य तिथि - 22 नवम्बर 2025)
+                </p>
+
+                {/* QR Code Section */}
+                <div className="mt-4 flex flex-col items-center gap-3">
+
+                    {/* Share Buttons */}
+                    <div className="flex gap-4 mt-2">
+
+                        {/* WhatsApp Share */}
+                        <a
+                            href={`https://wa.me/?text=${encodeURIComponent(`
+                                स्वर्गीय श्री परमेश्वर प्रसाद सिंह 
+                                (जन्म: 02 जनवरी 1944 – पुण्य तिथि: 22 नवम्बर 2025)
+
+                                पूरा जीवन परिचय यहाँ पढ़ें:
+                                https://ppsingh.vercel.app/
+                                `)}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-4 py-2 bg-green-600 text-white rounded-lg shadow-md text-sm font-medium hover:bg-green-700"
+                        >
+                            WhatsApp पर शेयर करें
+                        </a>
+
+                        {/* Facebook Share */}
+                        <a
+                            href="https://www.facebook.com/sharer/sharer.php?u=https://ppsingh.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-4 py-2 bg-blue-600 text-white rounded-lg shadow-md text-sm font-medium hover:bg-blue-700"
+                        >
+                            Facebook पर शेयर करें
+                        </a>
+
+
+                    </div>
+                </div>
+
             </div>
 
+            {/* ==== Existing Content Begins Here ==== */}
             <section className="mb-6 whitespace-pre-line">
                 <h2 className="text-xl font-bold mb-2">जीवन परिचय</h2>
                 <p>
