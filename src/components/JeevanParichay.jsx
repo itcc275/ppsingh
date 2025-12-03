@@ -102,7 +102,7 @@ export default function JeevanParichay() {
                 {/* ==== QR Code Share Section ==== */}
                 <div className="text-center mt-10 mb-8">
                     <h2 className="text-xl font-bold text-gray-900 mb-3">
-                        व्हाट्सऐप और फ़ेसबुक पर साझा करने के लिए QR कोड स्कैन करें
+                        PDF डाउनलोड करने के लिए QR कोड स्कैन करें
                     </h2>
 
                     <div className="flex justify-center">
