@@ -3,15 +3,16 @@ import { sections } from "../utils/constants";
 export default function JeevanParichay() {
     return (
         <div
-            className="repeat bg-top"
+            className="bg-top"
             style={{
                 backgroundImage: "url('background_ppsingh2.png')",
                 backgroundSize: "contain",
+                marginTop: "20px",
             }}
         >
 
             {/* Outer Modern Border + Soft Glow */}
-            <div className="bg-white/80">
+            <div className="bg-white/35">
 
                 {/* ==== Shradhanjali Heading ==== */}
                 <br />
@@ -20,38 +21,27 @@ export default function JeevanParichay() {
                 <div className="relative w-40 h-40 sm:w-48 sm:h-48 mx-auto mb-6">
 
                     {/* Profile Photo */}
-                    <img
-                        src="father.png"
-                        alt="स्वर्गीय श्री परमेश्वर प्रसाद सिंह"
-                        className="w-full h-full rounded-full object-cover border-4 border-[#d4a74b] shadow-lg"
-                    />
 
-                    {/* Garland PNG */}
-                    {/* <img
-                        src="https://i.imgur.com/h6EUxHj.png"
-                        alt="Flower Garland"
-                        className="absolute inset-0 w-full h-full pointer-events-none"
-                    /> */}
                 </div>
                 <div className="text-center mb-4">
                     <h2 className="text-4xl font-bold text-gray-800 tracking-wide">
-                        🙏 श्रद्धांजलि 🙏
+                        <br />
                     </h2>
                 </div>
 
                 {/* === Name & Dates === */}
                 <div className="text-center mb-6">
                     <h1 className="text-3xl font-bold text-gray-900">
-                        स्वर्गीय श्री परमेश्वर प्रसाद सिंह
+                        <br />
                     </h1>
 
                     <p className="text-lg font-semibold mt-1 text-gray-700">
-                        (जन्म - 02 जनवरी 1944  •  पुण्य तिथि - 22 नवम्बर 2025)
+
                     </p>
                 </div>
 
                 {/* ==== Share Buttons ==== */}
-                <div className="mt-4 flex justify-center gap-4 mb-8">
+                {/* <div className="mt-4 flex justify-center gap-4 mb-8">
                     <a
                         href={`https://wa.me/?text=${encodeURIComponent(`
                             स्वर्गीय श्री परमेश्वर प्रसाद सिंह 
@@ -75,14 +65,14 @@ export default function JeevanParichay() {
                     >
                         Facebook पर शेयर करें
                     </a>
-                </div>
+                </div> */}
 
                 {/* ==== Sections with Modern Separators ==== */}
                 {
                     sections.map((section, index) => (
-                        <div key={index} className="mb-8"
+                        <div key={index} className="mb-4"
                             style={{
-                                padding: "0 3.5rem"
+                                padding: "0 11rem"
                             }}
                         >
                             <h2 className="text-xl font-bold mb-2 text-gray-900">
@@ -100,10 +90,34 @@ export default function JeevanParichay() {
                         </div>
                     ))
                 }
+                <br></br>
                 {/* ==== QR Code Share Section ==== */}
                 <div className="text-center mt-10 mb-8">
                     <h2 className="text-xl font-bold text-gray-900 mb-3">
                         व्हाट्सऐप और फ़ेसबुक पर साझा करने के लिए QR कोड स्कैन करें
+                    </h2>
+
+                    <div className="flex justify-center">
+                        <img
+                            src="ppsingh_qrcode.png"
+                            alt="QR Code for Sharing"
+                            className="w-40 h-40 sm:w-48 sm:h-48 shadow-lg rounded-lg border border-gray-300"
+                        />
+                    </div>
+
+                    <p className="text-gray-700 text-sm mt-3">
+                        (मोबाइल कैमरा से स्कैन करें और सीधे श्रद्धांजलि पेज खोलें)
+                    </p>
+                </div>
+                {/* ==== QR Code Share Section ==== */}
+                <div className="text-center mt-10 mb-8">
+                    <h2 className="text-xl font-bold text-gray-900 mb-3">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                     </h2>
 
                     <div className="flex justify-center">
