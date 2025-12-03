@@ -14,7 +14,6 @@ export default function PadPage() {
             >
                 PDF देखें / Download करें
             </a>
-
         </div>
     );
 }
