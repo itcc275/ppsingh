@@ -5,7 +5,7 @@ export default function JeevanParichay() {
         <div
             className="bg-top"
             style={{
-                backgroundImage: "url('background_ppsingh2.png')",
+                backgroundImage: "url('background.png')",
                 backgroundSize: "contain",
                 marginTop: "20px",
             }}
@@ -90,28 +90,51 @@ export default function JeevanParichay() {
                         </div>
                     ))
                 }
-                <br></br>
+
                 {/* ==== QR Code Share Section ==== */}
                 <div className="text-center mt-10 mb-8">
-                    <h2 className="text-xl font-bold text-gray-900 mb-3">
-                        व्हाट्सऐप और फ़ेसबुक पर साझा करने के लिए QR कोड स्कैन करें
+                    <h2 className="text-xl font-bold text-gray-900 mb-3" style={{ fontSize: "25px", marginBottom: "50px", marginTop: "50px" }}>
+                        PDF डाउनलोड करने के लिए QR कोड स्कैन करें
                     </h2>
 
                     <div className="flex justify-center">
                         <img
+                            style={{ height: "25rem", width: "25rem" }}
                             src="ppsingh_qrcode.png"
                             alt="QR Code for Sharing"
-                            className="w-40 h-40 sm:w-48 sm:h-48 shadow-lg rounded-lg border border-gray-300"
+                            className="w-80 h-80 sm:w-48 sm:h-48 shadow-lg rounded-lg border border-gray-300"
                         />
                     </div>
 
-                    <p className="text-gray-700 text-sm mt-3">
+                    <p className="text-gray-700 text-sm mt-3" style={{ fontSize: "25px", marginTop: "50px", marginBottom: "50px", fontWeight: "bold" }}>
                         (मोबाइल कैमरा से स्कैन करें और सीधे श्रद्धांजलि पेज खोलें)
                     </p>
                 </div>
                 {/* ==== QR Code Share Section ==== */}
                 <div className="text-center mt-10 mb-8">
                     <h2 className="text-xl font-bold text-gray-900 mb-3">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                         <br />
                         <br />
                         <br />
