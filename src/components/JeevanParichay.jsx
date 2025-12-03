@@ -53,32 +53,27 @@ export default function JeevanParichay() {
                 {/* ==== Share Buttons ==== */}
                 <div className="mt-4 flex justify-center gap-4 mb-8">
 
-                    {/* WhatsApp Share */}
+                    {/* Download PDF Button */}
                     <a
-                        href={`https://wa.me/?text=${encodeURIComponent(`
-                        📄 श्रद्धांजलि PDF  
-                        स्वर्गीय श्री परमेश्वर प्रसाद सिंह  
-                        पूरा जीवन परिचय (PDF):  
-                        https://ppsingh.vercel.app/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80_%E0%A4%AA%E0%A4%B0%E0%A4%AE%E0%A5%87%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%B0_%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%BE%E0%A4%A6_%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9_%E0%A4%9C%E0%A5%80%E0%A4%B5%E0%A4%A8_%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%9A%E0%A4%AF.pdf
-                                `)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="/ppsingh.pdf"
+                        download="Shradhanjali_PPSingh.pdf"
                         className="px-5 py-2 bg-green-600 text-white rounded-lg shadow text-sm font-medium hover:bg-green-700"
                     >
-                        WhatsApp पर शेयर करें
+                        PDF डाउनलोड करें
                     </a>
 
-                    {/* Facebook Share */}
+                    {/* View PDF Online */}
                     <a
-                        href={`https://www.facebook.com/sharer/sharer.php?u=https://ppsingh.vercel.app/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80_%E0%A4%AA%E0%A4%B0%E0%A4%AE%E0%A5%87%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%B0_%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A4%BE%E0%A4%A6_%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9_%E0%A4%9C%E0%A5%80%E0%A4%B5%E0%A4%A8_%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%9A%E0%A4%AF.pdf`}
+                        href="/ppsingh.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-5 py-2 bg-blue-600 text-white rounded-lg shadow text-sm font-medium hover:bg-blue-700"
                     >
-                        Facebook पर शेयर करें
+                        PDF ऑनलाइन देखें
                     </a>
 
                 </div>
+
 
 
                 {/* ==== Sections with Modern Separators ==== */}
