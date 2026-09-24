@@ -22,11 +22,12 @@ const ShraddhCard123 = ({ recipientName, cardRef, cardData }) => {
                     boxShadow: "0 0 15px rgba(0,0,0,0.15)",
                     lineHeight: "1.6",
                     fontFamily: "Noto Sans Devanagari, serif",
-                    fontSize: "18px"
+                    fontSize: "16px"
                 }}
             >
                 {/* Profile Photo */}
-                <div style={{ textAlign: "center" }}>
+                <div style={{ display: "flex", justifyContent: "center" }}>
+
                     <img
                         src="/lakshikant.png"  // Replace with your image path
                         alt="Profile"
@@ -88,7 +89,7 @@ const ShraddhCard123 = ({ recipientName, cardRef, cardData }) => {
                 <h3 style={{ textAlign: "center", margin: "15px 0 10px 0" }}>श्राद्ध कार्यक्रम</h3>
 
                 {/* Program Table */}
-                <table style={{ width: "100%", borderCollapse: "collapse", marginTop: 0 }}>
+                <table style={{ width: "100%", borderCollapse: "collapse", marginTop: 0, fontSize: "14px" }}>
                     <thead>
                         <tr>
                             <th style={headerCell}>दिनांक</th>
@@ -160,7 +161,7 @@ const ShraddhCard123 = ({ recipientName, cardRef, cardData }) => {
 // Table Styles
 const headerCell = {
     border: "1px solid #000",
-    padding: "10px",
+    padding: "6px",
     backgroundColor: "#eaeaea",
     fontWeight: "bold",
     textAlign: "center"
@@ -168,7 +169,7 @@ const headerCell = {
 
 const cell = {
     border: "1px solid #000",
-    padding: "10px",
+    padding: "6px",
     textAlign: "center"
 };
 
